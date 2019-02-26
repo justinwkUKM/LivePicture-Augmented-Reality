@@ -1,0 +1,25 @@
+{
+	
+"video_hyperlink": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    
+"redirect_url": "https://someURL",
+	
+"Facebook": "https://someURL",
+    
+"Instagram": "https://www.instagram.com/?hl=en",
+	
+"WhatsApp": "https://someURL",
+    
+"LinkedIn": "https://someURL",
+    
+"Twitter": "https://someURL",
+    
+"Youtube": "https://www.youtube.com/watch?v=sMbA-ZfYvh8",
+
+"Pinterest": "https://someURL",
+"Snapchat":"https://someURL",
+"GooglePlus": "https://someURL",    
+"maps_location": "https://someURL",
+    
+"website": "http://www.savewalterwhite.com/"
+}

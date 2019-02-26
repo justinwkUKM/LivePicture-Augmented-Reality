@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vuforia.engine.ext"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:debuggable="false" >
+
+        <!-- Allow the application to make use of ARCore, if available -->
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+<!--             To support the ODG R7 in stereo mode we must add the following library. -->
+        <uses-library
+            android:name="com.osterhoutgroup.api.ext"
+            android:required="false" />
+    </application>
+
+</manifest>
