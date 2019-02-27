@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/waqasmcbookair/Downloads/OneDrive-2019-02-23/BurgerAR/iefa.apk
+C:/Users/Farhan/Desktop/BurgerAR_apk.apk
 SceneListBegin?
 Assets/Scenes/MainAR.unity
 SceneListEnd?

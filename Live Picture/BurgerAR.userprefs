@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{7C181596-8B62-8968-D348-AA3ACC1B3261}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/VideoProgressBar.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AppCore.cs" Line="196" Column="2" />
+      <File FileName="Assets/Scripts/VideoPlayerHandler.cs" Line="419" Column="10" />
+      <File FileName="Assets/Scripts/VideoProgressBar.cs" Line="89" Column="2" />
+      <File FileName="Assets/SamplesResources/Scripts/CustomCloudRecoEventHandler.cs" Line="205" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BurgerAR PreferredExecutionTarget="Unity.Editor" />
+</Properties>

@@ -65,18 +65,35 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
 
     string targetName = "";
 
+    /*
+     * 
+     * 
+     * {"video_hyperlink":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+     * "redirect_url":"www.facebook.com",
+     * "facebook":"www.facebook.com",
+     * "instagram":"www.facebook.com",
+     * "whatsapp":"www.facebook.com",
+     * "linkedln":"www.facebook.com",
+     * "twitter":"www.facebook.com",
+     * "youtube":"www.facebook.com",
+     * "maps_location":null,
+     * "website":"www.facebook.com"}
+*/
+
+
+
+
     Dictionary<string, string> _targetMetaData = new Dictionary<string, string>() {
         {"video_hyperlink","" },
         {"redirect_url","" },
-        {"Facebook","" },
-        {"GooglePlus","" },
-        {"Instagram","" },
-        {"WhatsApp","" },
+        {"facebook","" },
+        {"instagram","" },
+        {"whatsapp","" },
         {"Pinterest","" },
         {"Snapchat","" },
-        {"Twitter","" },
-        {"LinkedIn","" },
-        {"Youtube","" },
+        {"twitter","" },
+        {"linkedln","" },
+        {"youtube","" },
         {"maps_location","" },
         {"website","" }
     };
@@ -106,9 +123,6 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
             _targetMetaData = value;
         }
     }
-
-
-
 
     #region ICloudRecoEventHandler_IMPLEMENTATION
     /// <summary>

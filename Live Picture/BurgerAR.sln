@@ -1,17 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{CFEC04A9-3547-07B5-EA40-2EF18FFDDDFF}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAR", "Assembly-CSharp.csproj", "{CFEC04A9-3547-07B5-EA40-2EF18FFDDDFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{B86C31EC-5387-B218-3793-3A8711A7A118}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAR", "Assembly-CSharp-firstpass.csproj", "{B86C31EC-5387-B218-3793-3A8711A7A118}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuforiaScripts", "VuforiaScripts.csproj", "{055FE077-25C6-7C15-1B07-5F250B7787CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAR", "VuforiaScripts.csproj", "{055FE077-25C6-7C15-1B07-5F250B7787CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{86FE6E26-AC17-7CEC-9EE3-DC01435AAEC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAR", "Assembly-CSharp-Editor.csproj", "{86FE6E26-AC17-7CEC-9EE3-DC01435AAEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{C68B5FBE-4B08-4A90-2BB1-2CECAADC5168}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAR", "Assembly-CSharp-Editor-firstpass.csproj", "{C68B5FBE-4B08-4A90-2BB1-2CECAADC5168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuforiaEditorScripts", "VuforiaEditorScripts.csproj", "{599A8C45-5DB1-D972-76CF-D2ADA87B64F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAR", "VuforiaEditorScripts.csproj", "{599A8C45-5DB1-D972-76CF-D2ADA87B64F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,5 +46,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

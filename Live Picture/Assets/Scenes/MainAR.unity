@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 11081413}
   - component: {fileID: 11081415}
   m_Layer: 5
-  m_Name: Facebook
+  m_Name: facebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 127.90997, y: -150.1425}
+  m_AnchoredPosition: {x: 484.52002, y: -150.1425}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &11081413
@@ -1284,7 +1284,7 @@ GameObject:
   - component: {fileID: 692221754}
   - component: {fileID: 692221756}
   m_Layer: 5
-  m_Name: Youtube
+  m_Name: youtube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1305,7 +1305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1792.09, y: -150.1425}
+  m_AnchoredPosition: {x: 1435.48, y: -150.1425}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &692221754
@@ -1406,7 +1406,7 @@ GameObject:
   - component: {fileID: 705578599}
   - component: {fileID: 705578601}
   m_Layer: 5
-  m_Name: WhatsApp
+  m_Name: whatsapp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1427,7 +1427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1554.35, y: -150.1425}
+  m_AnchoredPosition: {x: 1197.74, y: -150.1425}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705578599
@@ -1786,7 +1786,7 @@ GameObject:
   - component: {fileID: 776250109}
   - component: {fileID: 776250111}
   m_Layer: 5
-  m_Name: Instagram
+  m_Name: instagram
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1807,7 +1807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 603.39, y: -150.1425}
+  m_AnchoredPosition: {x: 722.26, y: -150.1425}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776250109
@@ -2031,7 +2031,7 @@ GameObject:
   - component: {fileID: 834324760}
   - component: {fileID: 834324762}
   m_Layer: 5
-  m_Name: Twitter
+  m_Name: twitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2052,7 +2052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1316.61, y: -150.1425}
+  m_AnchoredPosition: {x: 960, y: -150.1425}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834324760
@@ -3021,7 +3021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1238445149
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3292,7 +3292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1281407528
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4383,7 +4383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1990324005
 RectTransform:
   m_ObjectHideFlags: 0
