@@ -89,9 +89,7 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
         {"facebook","" },
         {"instagram","" },
         {"whatsapp","" },
-        {"Pinterest","" },
-        {"Snapchat","" },
-        {"twitter","" },
+        { "twitter","" },
         {"linkedln","" },
         {"youtube","" },
         {"maps_location","" },
@@ -128,13 +126,14 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
     /// <summary>
     /// called when TargetFinder has been initialized successfully
     /// </summary>
-    public void OnInitialized(TargetFinder targetFinder)
+    public void OnInitialized()
     {
         // get a reference to the Object Tracker, remember it
         mObjectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
         targetScannerText.text = "Cloud Reco - Initialized";
 
     }
+
 
     /// <summary>
     /// visualize initialization errors
@@ -261,15 +260,16 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
 
         // Check if the metadata isn't null
 
-
-
         TargetName = targetSearchResult.TargetName;
         string[] _dictionaryKeys = TargetMetaData.Keys.ToArray();
-        JsonData jsonValue = JsonMapper.ToObject(targetSearchResult.MetaData);
 
+        JsonData jsonValue = JsonMapper.ToObject(targetSearchResult.MetaData);
+        targetScannerText.text = "Found: " + targetSearchResult.TargetName;
+/*
         foreach (string s in _dictionaryKeys)
         {
-            TargetMetaData[s] = jsonValue[s].ToString();
+            if (jsonValue.Keys.Contains(s))
+                TargetMetaData[s] = jsonValue[s].ToString();
         }
 
 
@@ -287,14 +287,14 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
             augmentation.transform.SetParent(newImageTarget.transform);
 
 
-        targetScannerText.text = "Scanned: " + TargetName;
+        targetScannerText.text = "Scanned: " + targetSearchResult.TargetName;
 
         if (newImageTarget)
         {
             ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
             ImageTargetBehaviour imageTargetBehaviour = (ImageTargetBehaviour)tracker.TargetFinder.EnableTracking(targetSearchResult, newImageTarget);
         }
-
+        */
     }
     #endregion // ICloudRecoEventHandler_IMPLEMENTATION
 

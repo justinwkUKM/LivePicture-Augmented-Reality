@@ -199,5 +199,10 @@ public class AppCore : MonoBehaviour//, IDragHandler, IPointerDownHandler
         Debug.Log("SelectedGameobject is : " + EventSystem.current.currentSelectedGameObject.name);
         Application.OpenURL(cloudRecoObj.TargetMetaData[EventSystem.current.currentSelectedGameObject.name]);
     }
+
+
+    public void OpenFacebook() { Application.OpenURL("http://www.facebook.com"); }
+    public void OpenGooglePlus() { Application.OpenURL("http://www.Google.com"); }
+    public void OpenInstagram() { Application.OpenURL("http://www.Instagram.com"); }
 }
 

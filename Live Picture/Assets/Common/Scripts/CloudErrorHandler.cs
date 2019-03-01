@@ -127,7 +127,7 @@ public class CloudErrorHandler : MonoBehaviour, ICloudRecoEventHandler
     //public void OnInitialized() {}
     public void OnStateChanged(bool scanning) {}
     public void OnNewSearchResult(TargetFinder.TargetSearchResult targetSearchResult) {}
-    public void OnInitialized(TargetFinder targetFinder) { }
+    public void OnInitialized() { }
     #endregion INTERFACE_IMPLEMENTATION_ICloudRecoEventHandler
 
 
@@ -151,5 +151,6 @@ public class CloudErrorHandler : MonoBehaviour, ICloudRecoEventHandler
         UnityEngine.SceneManagement.SceneManager.LoadScene(startLevel);
     }
 
+ 
     #endregion PRIVATE_METHODS
 }

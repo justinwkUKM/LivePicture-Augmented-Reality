@@ -50,7 +50,7 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler
         Debug.LogError("Cloud Reco failed to initialize!");
     }
 
-    public void OnInitialized(TargetFinder targetFinder)
+    public void OnInitialized()
     {
         Debug.Log("Cloud Reco initialized");
    
