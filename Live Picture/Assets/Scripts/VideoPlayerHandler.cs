@@ -252,7 +252,9 @@ public class VideoPlayerHandler : MonoBehaviour, ITrackableEventHandler
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-
+        //foreach (var component in audioComponents)
+        //component.enabled = true;
+        //AppCoreObj.cloudRecoObj.targetScannerText.text = "Tracking Found: " + AppCoreObj.cloudRecoObj.TargetName;
     }
 
 
@@ -294,8 +296,8 @@ public class VideoPlayerHandler : MonoBehaviour, ITrackableEventHandler
             _playpauseBtn.SetActive(false);
             _progressBar.SetActive(false);
             state = STATE.PAUSE;
-            AppCoreObj.EnableDisableIcons(false);
         }
+        AppCoreObj.EnableDisableIcons(false);
     }
 
 
@@ -306,6 +308,7 @@ public class VideoPlayerHandler : MonoBehaviour, ITrackableEventHandler
         AppCoreObj.cloudRecoObj.targetScannerText.text = "Metadata :" + AppCoreObj.cloudRecoObj.TargetMetaData;
         SetVideoClipURL(AppCoreObj.cloudRecoObj.TargetMetaData["video_hyperlink"]);
         yield return new WaitForSeconds(0.5f);
+
 
         if (state == STATE.STOP)
         {
@@ -335,9 +338,7 @@ public class VideoPlayerHandler : MonoBehaviour, ITrackableEventHandler
             video_player.Play();
             audio_source.Play();
             state = STATE.PLAYING;
-            AppCoreObj.EnableDisableIcons(true);
         }
-
     }
 
 

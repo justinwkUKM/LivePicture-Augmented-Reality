@@ -56,13 +56,19 @@ public class CloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
     /// <summary>
     /// called when TargetFinder has been initialized successfully
     /// </summary>
-    public void OnInitialized()
+    public void OnInitialized(TargetFinder targetFinder)
     {
         // get a reference to the Object Tracker, remember it
         mObjectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
         mContentManager = FindObjectOfType<ContentManager>();
     }
 
+    public void OnInitialized()
+    {
+        // get a reference to the Object Tracker, remember it
+        mObjectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+        mContentManager = FindObjectOfType<ContentManager>();
+    }
 
     /// <summary>
     /// visualize initialization errors
@@ -326,6 +332,5 @@ public class CloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
         if (startLevel < 0) startLevel = 0;
         UnityEngine.SceneManagement.SceneManager.LoadScene(startLevel);
     }
-
     #endregion // PRIVATE_METHODS
 }

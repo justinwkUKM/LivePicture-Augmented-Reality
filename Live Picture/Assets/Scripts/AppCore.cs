@@ -180,7 +180,8 @@ public class AppCore : MonoBehaviour//, IDragHandler, IPointerDownHandler
             {
                 for (int j = 0; j < IconImages.Length; j++)
                 {
-                    IconImages[j].enabled = !(cloudRecoObj.TargetMetaData[IconImages[j].name] == null);
+                    if (IconImages[j].name == _dictionaryKeys[i])
+                        IconImages[j].enabled = !(cloudRecoObj.TargetMetaData[IconImages[j].name] == null);
                 }
             }
         }

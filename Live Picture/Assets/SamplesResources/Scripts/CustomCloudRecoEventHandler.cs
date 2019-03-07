@@ -12,8 +12,8 @@ using Vuforia;
 using UnityEngine.UI;
 using UnityEngine.Video;
 using System.Collections.Generic;
-using System.Linq;
 using LitJson;
+using System.Linq;
 
 /// <summary>
 /// This MonoBehaviour implements the Cloud Reco Event handling for this sample.
@@ -64,25 +64,6 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
     VideoPlayerHandler Cloud_Video_Player;
 
     string targetName = "";
-
-    /*
-     * 
-     * 
-     * {"video_hyperlink":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-     * "redirect_url":"www.facebook.com",
-     * "facebook":"www.facebook.com",
-     * "instagram":"www.facebook.com",
-     * "whatsapp":"www.facebook.com",
-     * "linkedln":"www.facebook.com",
-     * "twitter":"www.facebook.com",
-     * "youtube":"www.facebook.com",
-     * "maps_location":null,
-     * "website":"www.facebook.com"}
-*/
-
-
-
-
     Dictionary<string, string> _targetMetaData = new Dictionary<string, string>() {
         {"video_hyperlink","" },
         {"redirect_url","" },
@@ -122,10 +103,18 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
         }
     }
 
+
     #region ICloudRecoEventHandler_IMPLEMENTATION
     /// <summary>
     /// called when TargetFinder has been initialized successfully
     /// </summary>
+    public void OnInitialized(TargetFinder targetFinder)
+    {
+        // get a reference to the Object Tracker, remember it
+        mObjectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+        targetScannerText.text = "Cloud Reco - Initialized";
+
+    }
     public void OnInitialized()
     {
         // get a reference to the Object Tracker, remember it
@@ -133,7 +122,6 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
         targetScannerText.text = "Cloud Reco - Initialized";
 
     }
-
 
     /// <summary>
     /// visualize initialization errors
@@ -206,7 +194,6 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
                 errorMsg = "Low-frame quality has been continuously observed.\n\nError Event Received on Frame: " + Time.frameCount;
                 break;
         }
-        
 
         // Prepend the error code in red
         errorMsg = "<color=red>" + updateError.ToString().Replace("_", " ") + "</color>\n\n" + errorMsg;
@@ -225,8 +212,6 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
     /// </summary>
     public void OnStateChanged(bool scanning)
     {
-
-
         if (scanning)
         {
             // clear all known trackables
@@ -264,14 +249,13 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
         string[] _dictionaryKeys = TargetMetaData.Keys.ToArray();
 
         JsonData jsonValue = JsonMapper.ToObject(targetSearchResult.MetaData);
-        targetScannerText.text = "Found: " + targetSearchResult.TargetName;
-/*
+        targetScannerText.text = "Found: " + jsonValue;
+
         foreach (string s in _dictionaryKeys)
         {
             if (jsonValue.Keys.Contains(s))
                 TargetMetaData[s] = jsonValue[s].ToString();
         }
-
 
         //WindowedScreenTransform
 
@@ -281,20 +265,24 @@ public class CustomCloudRecoEventHandler : MonoBehaviour, ICloudRecoEventHandler
         CoreObj.EnableDisableIcons(true);
 
 
-
         GameObject augmentation = null;
         if (augmentation != null)
             augmentation.transform.SetParent(newImageTarget.transform);
-
-
-        targetScannerText.text = "Scanned: " + targetSearchResult.TargetName;
 
         if (newImageTarget)
         {
             ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
             ImageTargetBehaviour imageTargetBehaviour = (ImageTargetBehaviour)tracker.TargetFinder.EnableTracking(targetSearchResult, newImageTarget);
         }
-        */
+
+
+        //if (imageTargetBehaviour)
+        //{
+        //    Destroy(imageTargetBehaviour);
+        //}
+
+        ////Enable the new result with the same ImageTargetBehaviour:
+        //imageTargetBehaviour = mObjectTracker.TargetFinder.EnableTracking(targetSearchResult, mParentOfImageTargetTemplate) as ImageTargetBehaviour;
     }
     #endregion // ICloudRecoEventHandler_IMPLEMENTATION
 

@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 public class NativeShareOld
 {
     public string
-        subject = "",
-    url = "",
-    text = "";
+        subject = "Menta AR Experience",
+    url = "https://www.menta.live/",
+    text = "Menta AR Experience\nFor more details please visit: https://www.menta.live/";
 
 
 	private bool isProcessing = false;

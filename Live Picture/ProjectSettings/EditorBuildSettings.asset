@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainAR.unity
+    path: Assets/Scenes/VideoPlayback.unity
     guid: 5b4679bbca8d246ccae1d5549b94ddac
   m_configObjects: {}
